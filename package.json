@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "C:\\srcfltr\\flutter\\bin\\flutter.bat",
+    "build": "C:\\srcfltr\\flutter\\bin\\flutter.bat build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
