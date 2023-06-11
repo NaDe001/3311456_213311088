@@ -1,25 +1,29 @@
 import 'package:flutter/cupertino.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-class MyTableCalenar extends StatefulWidget {
-  const MyTableCalenar({Key? key}) : super(key: key);
+class MyTableCalendar extends StatefulWidget {
+  final Function(DateTime) onDaySelected;
+
+  const MyTableCalendar({Key? key, required this.onDaySelected}) : super(key: key);
 
   @override
-  State<MyTableCalenar> createState() => _MyTableCalenarState();
+  State<MyTableCalendar> createState() => _MyTableCalendarState();
 }
 
-class _MyTableCalenarState extends State<MyTableCalenar> {
-
+class _MyTableCalendarState extends State<MyTableCalendar> {
   CalendarFormat _calendarFormat = CalendarFormat.month;
   DateTime _focusedDay = DateTime.now();
   DateTime _selectedDay = DateTime.now();
-
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         TableCalendar(
+          calendarStyle: CalendarStyle(
+            defaultTextStyle: TextStyle(fontSize: 18),
+            weekendTextStyle: TextStyle(fontSize: 18),
+          ),
           firstDay: DateTime.utc(2023, 1, 1),
           lastDay: DateTime.utc(2023, 12, 31),
           focusedDay: _focusedDay,
@@ -31,6 +35,7 @@ class _MyTableCalenarState extends State<MyTableCalenar> {
             setState(() {
               _selectedDay = selectedDay;
               _focusedDay = focusedDay;
+              widget.onDaySelected(selectedDay);
             });
           },
           onFormatChanged: (format) {

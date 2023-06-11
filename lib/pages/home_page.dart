@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:follow_pet/pages/profil_page.dart';
 import 'package:follow_pet/pages/ayarlar_page.dart';
-
 import 'anasayfa_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.purpleAccent[100],
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.purple[400],
+        backgroundColor: Colors.blue[700],
         title: Text(
           "My Pet",
           style: TextStyle(fontSize: 30),
@@ -57,7 +56,7 @@ class _HomePageState extends State<HomePage> {
               });
             },
             labelType: NavigationRailLabelType.all,
-            backgroundColor: Colors.purple[400],
+            backgroundColor: Colors.blue[700],
             selectedLabelTextStyle: labelStyle.copyWith(color: selectedColor),
             unselectedLabelTextStyle:
                 labelStyle.copyWith(color: unselectedColor),

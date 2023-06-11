@@ -13,18 +13,19 @@ class Anasayfa extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.purpleAccent[200],
+        backgroundColor: Colors.blue[100],
         body: SafeArea(
           child: Center(
             child: ListView(
               padding: EdgeInsets.symmetric(horizontal: 16),
               children: [
+                SizedBox(height: 20,),
                 Container(
                   width: 150,
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red[500],
+                      backgroundColor: Colors.red[500],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -48,7 +49,7 @@ class Anasayfa extends StatelessWidget {
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.cyan,
+                      backgroundColor: Colors.yellow[700],
                       textStyle: const TextStyle(
                         color: Colors.black,
                         fontSize: 30,
@@ -72,7 +73,7 @@ class Anasayfa extends StatelessWidget {
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.orangeAccent[200],
+                      backgroundColor: Colors.pinkAccent,
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -96,7 +97,7 @@ class Anasayfa extends StatelessWidget {
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.green[700],
+                      backgroundColor: Colors.green[700],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -116,11 +117,11 @@ class Anasayfa extends StatelessWidget {
                 ),
                 SizedBox(height: 16),
                 Container(
-                  width: 150,
-                  height: 150,
+                 width: 150,
+                height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.pink[500],
+                      primary: Colors.yellow[700],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -144,7 +145,7 @@ class Anasayfa extends StatelessWidget {
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.grey[800],
+                      backgroundColor: Colors.blue[900],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,

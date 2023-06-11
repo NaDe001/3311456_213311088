@@ -7,10 +7,10 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.purpleAccent[200],
+        backgroundColor: Colors.blue[300],
         appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.purple[400],
+        backgroundColor: Colors.blue[700],
         title: Text(
         "My Pet",
         style: TextStyle(fontSize: 30),

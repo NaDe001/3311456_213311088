@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "946004064158",
+    "project_id": "follow-pet-68b31",
+    "storage_bucket": "follow-pet-68b31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946004064158:android:7e0a7ca58b26feaed4088f",
+        "android_client_info": {
+          "package_name": "com.example.follow_pet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946004064158-nkp6ma6enoqk1fg2iqmh4br9p16f708f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv0iHkC3ZcUo8nhEjq7GNJeg8_XgtYecA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946004064158-nkp6ma6enoqk1fg2iqmh4br9p16f708f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

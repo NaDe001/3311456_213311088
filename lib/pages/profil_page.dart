@@ -16,7 +16,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purpleAccent[100],
+      backgroundColor: Colors.blue[100],
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Form(
@@ -87,10 +87,8 @@ class _ProfilePageState extends State<ProfilePage> {
                               title: Text('Profil Bilgileriniz'),
                               content: SingleChildScrollView(
                                 child: ListBody(
-
                                   children: [
-                                    Text('Adı: $_name'
-                                    ),
+                                    Text('Adı: $_name'),
                                     Text('Yaşı: $_age'),
                                     Text('Cinsi: $_animal'),
                                     Text('Türü: $_genus'),
