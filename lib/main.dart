@@ -1,11 +1,23 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:follow_pet/pages/home_page.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  if(kIsWeb){
+    await Firebase.initializeApp(
+      options: FirebaseOptions(apiKey: "AIzaSyA2_J6wgAiZT7AErIhAYG8bPUq5Djj95xo",
+          appId: "1:946004064158:web:24cceb7620d61bf1d4088f",
+          messagingSenderId: "946004064158",
+          projectId: "follow-pet-68b31",
+        storageBucket: "follow-pet-68b31.appspot.com",),
+    );
+  }else{
+    await Firebase.initializeApp();
+  }
   runApp(MyApp());
 }
 
