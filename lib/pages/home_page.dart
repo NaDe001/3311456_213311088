@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:follow_pet/pages/gallery.dart';
 import 'package:follow_pet/pages/profil_page.dart';
-import 'package:follow_pet/pages/ayarlar_page.dart';
 import 'anasayfa_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
         case 1:
           return ProfilePage();
         case 2:
-          return Ayarlar();
+          return Gallery();
         default:
           return Anasayfa(); // Varsayılan sayfa
       }
@@ -72,8 +72,8 @@ class _HomePageState extends State<HomePage> {
                 label: Text("Profil"),
               ),
               NavigationRailDestination(
-                icon: Icon(Icons.settings),
-                label: Text("Ayarlar"),
+                icon: Icon(Icons.photo_library),
+                label: Text("Gallery"),
               ),
             ],
           ),

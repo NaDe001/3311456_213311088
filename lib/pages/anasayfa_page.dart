@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:follow_pet/options/asi_takvimi.dart';
 import 'package:follow_pet/options/dis_parazit.dart';
-import 'package:follow_pet/options/gallery.dart';
+import 'package:follow_pet/options/evcil_hayvanlarim.dart';
 import 'package:follow_pet/options/ic_parazit.dart';
 import 'package:follow_pet/options/tedaviler.dart';
 import 'package:follow_pet/options/veterinerler.dart';
+import 'package:follow_pet/options/kilo_takip.dart';
+
+
 
 class Anasayfa extends StatelessWidget {
   @override
@@ -25,7 +28,7 @@ class Anasayfa extends StatelessWidget {
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red[500],
+                      backgroundColor: Colors.red[700],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -73,7 +76,7 @@ class Anasayfa extends StatelessWidget {
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.pinkAccent,
+                      backgroundColor: Colors.pink,
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -121,7 +124,7 @@ class Anasayfa extends StatelessWidget {
                 height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.yellow[700],
+                      backgroundColor: Colors.orange[900],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -140,12 +143,12 @@ class Anasayfa extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 16),
-                Container(
+               Container(
                   width: 150,
                   height: 150,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue[900],
+                      backgroundColor: Colors.purple[400],
                       textStyle: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -156,11 +159,35 @@ class Anasayfa extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Gallery(),
+                          builder: (context) => KiloTakip(),
                         ),
                       );
                     },
-                    child: Text('Gallery'),
+                    child: Text('Kilo Takip'),
+                  ),
+                ),
+                SizedBox(height: 16),
+                Container(
+                  width: 150,
+                  height: 150,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blueGrey[800],
+                      textStyle: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontStyle: FontStyle.normal,
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AnimalPage() ,
+                        ),
+                      );
+                    },
+                    child: Text('Hayvanlarım'),
                   ),
                 ),
               ],
